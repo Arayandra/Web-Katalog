@@ -144,3 +144,7 @@ Urutan upgrade yang disarankan:
 Lihat [kebijakan rilis dan dukungan Laravel](https://laravel.com/framework/docs/releases) serta [panduan upgrade Laravel 13](https://laravel.com/docs/13.x/upgrade).
 
 Workflow GitHub Actions yang hijau saat ini memvalidasi baseline Laravel 12, bukan hasil upgrade Laravel 13.
+
+## Screenshot aplikasi
+
+Screenshot browser dari aplikasi yang sedang berjalan belum tersedia di repository ini. Setelah menjalankan aplikasi dengan database dan seeder, tambahkan screenshot nyata halaman katalog, hasil pencarian/filter, serta detail produk ke `docs/screenshots/`. Gunakan tangkapan layar dari runtime aplikasi; jangan menggantinya dengan mockup atau gambar produk.
