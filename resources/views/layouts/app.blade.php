@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f7ef">
-    <meta name="description" content="Jelajahi katalog sayuran segar dan temukan bahan masakan pilihan untuk kebutuhan sehari-hari.">
-    <title>@yield('title', 'Katalog Segar') · Katalog Segar</title>
+    <meta name="description" content="Jelajahi katalog produk dan temukan informasi yang kamu butuhkan.">
+    <title>@yield('title', 'Web Katalog') · Web Katalog</title>
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,9 @@
     <div class="site-shell">
         <header class="site-header">
             <div class="container header-inner">
-                <a class="brand" href="{{ route('catalog.index') }}" aria-label="Katalog Segar, halaman utama">
+                <a class="brand" href="{{ route('catalog.index') }}" aria-label="Web Katalog, halaman utama">
                     <span class="brand-mark" aria-hidden="true">✳</span>
-                    <span>Katalog<span class="brand-accent">Segar</span></span>
+                    <span>Web<span class="brand-accent">Katalog</span></span>
                 </a>
                 <nav class="main-nav" aria-label="Navigasi utama">
                     <a href="{{ route('catalog.index') }}" class="{{ request()->routeIs('catalog.index') ? 'is-current' : '' }}">Beranda</a>
@@ -36,10 +36,10 @@
             <div class="container footer-inner">
                 <a class="brand footer-brand" href="{{ route('catalog.index') }}">
                     <span class="brand-mark" aria-hidden="true">✳</span>
-                    <span>Katalog<span class="brand-accent">Segar</span></span>
+                    <span>Web<span class="brand-accent">Katalog</span></span>
                 </a>
-                <p>Katalog produk segar untuk inspirasi belanja sehari-hari.</p>
-                <span class="footer-note">© {{ now()->year }} Katalog Segar</span>
+                <p>Katalog produk yang praktis untuk kebutuhan sehari-hari.</p>
+                <span class="footer-note">© {{ now()->year }} Web Katalog</span>
             </div>
         </footer>
     </div>
