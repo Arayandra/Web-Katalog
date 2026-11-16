@@ -15,7 +15,7 @@
                     <span class="eyebrow"><span class="eyebrow-dot"></span> INFORMASI PRODUK</span>
                     <h1>{{ $product->nama_produk }}</h1>
                     <span class="detail-category">{{ $product->jenis_produk ?: 'Produk segar' }}</span>
-                    <p class="detail-description">{{ $product->deskripsi ?: 'Produk segar pilihan untuk melengkapi kebutuhan sehari-hari.' }}</p>
+                    <p class="detail-description">{{ $product->deskripsi ?: 'Produk pilihan untuk melengkapi kebutuhan sehari-hari.' }}</p>
                     <div class="detail-price-label">Harga katalog</div>
                     <div class="detail-price">Rp {{ number_format((float) $product->harga, 0, ',', '.') }}</div>
                     <p class="detail-note">Harga dan ketersediaan dapat dikonfirmasi kepada pengelola katalog.</p>
