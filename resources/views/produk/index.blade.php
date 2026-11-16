@@ -6,21 +6,21 @@
     <section class="hero-section">
         <div class="container hero-grid">
             <div class="hero-copy">
-                <span class="eyebrow"><span class="eyebrow-dot"></span> PILIHAN SEGAR SETIAP HARI</span>
-                <h1>Mulai hidup lebih segar, <em>dari pilihanmu.</em></h1>
-                <p>Temukan sayuran pilihan untuk melengkapi hidangan dan kebutuhan harianmu. Jelajahi katalog dan pilih yang kamu butuhkan.</p>
+                <span class="eyebrow"><span class="eyebrow-dot"></span> PILIHAN PRODUK UNTUK KEBUTUHANMU</span>
+                <h1>Temukan produk yang tepat, <em>untuk setiap kebutuhan.</em></h1>
+                <p>Jelajahi berbagai produk, lihat informasi penting, dan temukan pilihan yang sesuai dengan kebutuhanmu.</p>
                 <a class="button button-primary" href="#katalog">Lihat katalog <span aria-hidden="true">↓</span></a>
-                <div class="hero-note"><span class="hero-note-icon">✓</span> Katalog praktis, informasi produk jelas</div>
+                <div class="hero-note"><span class="hero-note-icon">✓</span> Informasi produk tersusun rapi</div>
             </div>
             <div class="hero-art" aria-label="Ilustrasi sayuran segar" role="img">
                 <div class="art-sun"></div>
                 <div class="art-orbit art-orbit-one"></div>
                 <div class="art-orbit art-orbit-two"></div>
-                <div class="produce produce-one">🥬</div>
-                <div class="produce produce-two">🥕</div>
-                <div class="produce produce-three">🥦</div>
-                <div class="produce produce-four">🍅</div>
-                <div class="art-caption"><span>FRESH PICKS</span><strong>Good food, good mood.</strong></div>
+                <div class="produce produce-one">📦</div>
+                <div class="produce produce-two">🎧</div>
+                <div class="produce produce-three">📚</div>
+                <div class="produce produce-four">🧴</div>
+                <div class="art-caption"><span>CURATED PICKS</span><strong>Find what fits you.</strong></div>
                 <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span>
             </div>
         </div>
@@ -79,7 +79,7 @@
                             <div class="product-info">
                                 <div>
                                     <h3><a href="{{ route('catalog.show', $product->slug) }}">{{ $product->nama_produk }}</a></h3>
-                                    <p>{{ \Illuminate\Support\Str::limit($product->deskripsi ?: 'Produk segar pilihan untuk kebutuhan harian.', 76) }}</p>
+                                    <p>{{ \Illuminate\Support\Str::limit($product->deskripsi ?: 'Produk pilihan untuk kebutuhan sehari-hari.', 76) }}</p>
                                 </div>
                                 <div class="product-bottom">
                                     <strong>Rp {{ number_format((float) $product->harga, 0, ',', '.') }}</strong>
