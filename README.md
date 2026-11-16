@@ -1,5 +1,7 @@
 # Web Katalog
 
+![CI](https://github.com/Arayandra/Web-Katalog/actions/workflows/ci.yml/badge.svg?branch=main)
+
 Aplikasi katalog produk berbasis **Laravel 12** untuk menampilkan daftar produk, melihat detail, mencari produk, dan memfilter berdasarkan kategori.
 
 Repository: <https://github.com/Arayandra/Web-Katalog>
@@ -125,8 +127,20 @@ npm run build
 Belum ada lisensi khusus yang ditentukan untuk proyek ini.
 
 
-## Framework maintenance
+## Rencana pemeliharaan framework
 
-This project uses Laravel 12 and PHP 8.2+. Laravel 12 security fixes are currently scheduled through 24 February 2027. Plan a tested upgrade to Laravel 13 before the Laravel 12 security window closes. Laravel 13 requires PHP 8.3+, so verify the runtime and dependency constraints before changing Composer files.
+**Baseline saat ini:** Laravel 12 dan PHP 8.2+. Dukungan bug fix Laravel 12 berakhir pada **13 Agustus 2026**, sedangkan security fix dijadwalkan berakhir pada **24 Februari 2027**. Jadi, proyek masih berada dalam masa security support, tetapi sudah melewati masa bug-fix support.
 
-The GitHub Actions workflow currently verifies the Laravel 12 codebase, migrations, tests, dependency audit, and frontend build.
+**Target:** Laravel 13 dengan PHP 8.3 atau lebih baru. Laravel 13 dirilis pada 17 Maret 2026 dan mensyaratkan PHP minimal 8.3. Upgrade belum diterapkan pada `composer.json` maupun lockfile.
+
+Urutan upgrade yang disarankan:
+
+1. Buat branch khusus `upgrade/laravel-13` dan simpan baseline CI Laravel 12 yang saat ini hijau.
+2. Siapkan PHP 8.3+ pada lokal dan CI; verifikasi ekstensi PHP serta driver database.
+3. Audit kompatibilitas Laravel framework, Tinker, PHPUnit, Collision, Pail, Pint, Sail, dan seluruh dependency langsung. Jalankan `composer why-not laravel/framework ^13.0` sebelum mengubah constraint.
+4. Terapkan upgrade pada branch, perbaiki breaking changes, lalu uji migration, seeder, pencarian, filter kategori, pagination, detail produk, dan akses produk nonaktif.
+5. Jalankan `composer validate`, `composer audit`, `php artisan test`, `npm run build`, dan deployment checks. Regenerasi `composer.lock` setelah dependency tervalidasi, lalu gabungkan hanya setelah CI berhasil.
+
+Lihat [kebijakan rilis dan dukungan Laravel](https://laravel.com/framework/docs/releases) serta [panduan upgrade Laravel 13](https://laravel.com/docs/13.x/upgrade).
+
+Workflow GitHub Actions yang hijau saat ini memvalidasi baseline Laravel 12, bukan hasil upgrade Laravel 13.
