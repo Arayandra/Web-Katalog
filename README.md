@@ -123,3 +123,10 @@ npm run build
 ## Lisensi
 
 Belum ada lisensi khusus yang ditentukan untuk proyek ini.
+
+
+## Framework maintenance
+
+This project uses Laravel 12 and PHP 8.2+. Laravel 12 security fixes are currently scheduled through 24 February 2027. Plan a tested upgrade to Laravel 13 before the Laravel 12 security window closes. Laravel 13 requires PHP 8.3+, so verify the runtime and dependency constraints before changing Composer files.
+
+The GitHub Actions workflow currently verifies the Laravel 12 codebase, migrations, tests, dependency audit, and frontend build.
