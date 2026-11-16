@@ -26,6 +26,10 @@ Repository: <https://github.com/Arayandra/Web-Katalog>
 - Node.js dan npm
 - Vite dan Tailwind CSS 4
 
+## Catatan lockfile dependency
+
+Repository saat ini belum menyimpan `composer.lock` maupun `package-lock.json`. Sebelum upgrade Laravel, buat baseline dependency yang dapat direproduksi: jalankan `composer update` dan `npm install` pada lingkungan bersih, tinjau hasilnya, lalu commit kedua lockfile. Setelah lockfile tersedia, gunakan `composer install` dan `npm ci` di CI agar hasil build tidak berubah secara diam-diam.
+
 ## Persyaratan PHP
 
 Pastikan ekstensi PHP berikut aktif: `ctype`, `curl`, `dom`, `fileinfo`, `filter`, `hash`, `mbstring`, `openssl`, `pcre`, `pdo`, `session`, `tokenizer`, dan `xml`. Untuk SQLite aktifkan juga `pdo_sqlite` dan `sqlite3`; untuk MySQL aktifkan `pdo_mysql`.
