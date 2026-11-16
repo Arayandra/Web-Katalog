@@ -152,3 +152,8 @@ Workflow GitHub Actions yang hijau saat ini memvalidasi baseline Laravel 12, buk
 ## Screenshot aplikasi
 
 Screenshot browser dari aplikasi yang sedang berjalan belum tersedia di repository ini. Setelah menjalankan aplikasi dengan database dan seeder, tambahkan screenshot nyata halaman katalog, hasil pencarian/filter, serta detail produk ke `docs/screenshots/`. Gunakan tangkapan layar dari runtime aplikasi; jangan menggantinya dengan mockup atau gambar produk.
+
+
+## Latest CI verification
+
+Verified on **16 November 2026** on branch `main`: **8 Laravel tests passed (19 assertions)**. The workflow also completed the Vite production build and both npm and Composer dependency-advisory checks. The test result validates the current Laravel 12 baseline, not the planned Laravel 13 upgrade.
