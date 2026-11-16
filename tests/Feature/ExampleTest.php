@@ -14,6 +14,6 @@ class ExampleTest extends TestCase
         $this->get('/')
             ->assertOk()
             ->assertSee('Katalog')
-            ->assertSee('Mulai hidup lebih segar');
+            ->assertSee('Temukan produk yang tepat');
     }
 }
