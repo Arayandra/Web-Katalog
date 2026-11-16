@@ -12,7 +12,7 @@
                 <a class="button button-primary" href="#katalog">Lihat katalog <span aria-hidden="true">↓</span></a>
                 <div class="hero-note"><span class="hero-note-icon">✓</span> Informasi produk tersusun rapi</div>
             </div>
-            <div class="hero-art" aria-label="Ilustrasi sayuran segar" role="img">
+            <div class="hero-art" aria-label="Ilustrasi berbagai produk" role="img">
                 <div class="art-sun"></div>
                 <div class="art-orbit art-orbit-one"></div>
                 <div class="art-orbit art-orbit-two"></div>
@@ -41,7 +41,7 @@
                 <label class="search-box">
                     <span class="search-icon" aria-hidden="true">⌕</span>
                     <span class="sr-only">Cari produk</span>
-                    <input type="search" name="q" value="{{ $search }}" placeholder="Cari sayuran favoritmu..." maxlength="100">
+                    <input type="search" name="q" value="{{ $search }}" placeholder="Cari produk favoritmu..." maxlength="100">
                 </label>
                 <label class="select-box">
                     <span class="sr-only">Filter kategori</span>
@@ -72,7 +72,7 @@
                     @foreach ($products as $product)
                         <article class="product-card">
                             <a class="product-image" href="{{ route('catalog.show', $product->slug) }}" aria-label="Lihat {{ $product->nama_produk }}">
-                                <span class="product-category">{{ $product->jenis_produk ?: 'Produk segar' }}</span>
+                                <span class="product-category">{{ $product->jenis_produk ?: 'Produk' }}</span>
                                 <img src="{{ $product->gambar ? asset('storage/' . ltrim($product->gambar, '/')) : asset('images/product-placeholder.svg') }}" alt="{{ $product->nama_produk }}" loading="lazy">
                                 <span class="image-arrow" aria-hidden="true">↗</span>
                             </a>

@@ -1,20 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
-  <title id="title">Ilustrasi produk segar</title>
-  <desc id="desc">Ilustrasi daun hijau pada latar hijau lembut</desc>
+  <title id="title">Ilustrasi produk</title>
+  <desc id="desc">Ilustrasi kotak produk pada latar hijau lembut</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7efdf"/><stop offset="1" stop-color="#d5e4ca"/></linearGradient>
-    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8cae71"/><stop offset="1" stop-color="#315c3c"/></linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#83a66d"/><stop offset="1" stop-color="#315c3c"/></linearGradient>
   </defs>
   <rect width="720" height="520" rx="28" fill="url(#bg)"/>
-  <circle cx="360" cy="255" r="170" fill="#f5f7ef" opacity=".55"/>
-  <g fill="url(#leaf)" stroke="#315c3c" stroke-width="5" stroke-linejoin="round">
-    <path d="M353 379C188 344 160 197 203 117c132 6 214 112 150 262Z"/>
-    <path d="M370 379C319 222 414 108 541 95c50 137-15 264-171 284Z"/>
-    <path d="M358 382C254 265 292 145 395 74c104 100 89 242-37 308Z" fill="#71995d"/>
-  </g>
-  <g fill="none" stroke="#dce9d3" stroke-width="7" stroke-linecap="round" opacity=".9">
-    <path d="M354 376 238 151M365 377 514 132M357 376 394 105"/>
-  </g>
-  <path d="M358 382c-4 38-1 66 13 96" fill="none" stroke="#55784c" stroke-width="11" stroke-linecap="round"/>
-  <circle cx="570" cy="362" r="9" fill="#fff" opacity=".65"/><circle cx="155" cy="207" r="6" fill="#fff" opacity=".7"/>
+  <circle cx="360" cy="250" r="170" fill="#f5f7ef" opacity=".55"/>
+  <path d="m228 194 132-72 132 72-132 74-132-74Z" fill="#a8c391"/>
+  <path d="M228 194v142l132 74V268l-132-74Z" fill="#6e925b"/>
+  <path d="M492 194v142l-132 74V268l132-74Z" fill="url(#box)"/>
+  <path d="m228 194 132 74 132-74M360 268v142" fill="none" stroke="#e5efdc" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m305 152 132 73" stroke="#e5efdc" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="536" cy="335" r="9" fill="#fff" opacity=".65"/><circle cx="178" cy="214" r="6" fill="#fff" opacity=".7"/>
+  <path d="M360 90v-20m-10 10h20" stroke="#8aa574" stroke-width="5" stroke-linecap="round"/>
 </svg>
